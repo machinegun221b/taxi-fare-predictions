@@ -121,7 +121,33 @@ TRIP_MILES as before with the addition of:
 TRIP_MINUTES
 → derived from the feature TRIP_SECONDS in the dataset.
 
-- 2 features better than 1?
-- TRIP_SECONDS > TRIP_MINUTES?
-- Model Accuracy in real world?
+- we see the model with 2 features performs a bit better than that of one feature alone. After hyperparameter tuning we see that the RMSE values are, for:
+    - 1 feature model = 3.6411
+    - 2 features model = 3.4978
+      → which puts the second model predictions $0.143 closer to the actual observed values on          average.
+    - we observe the same in the plots as well.
+- we use TRIP_MINUTES > TRIP_SECONDS since the mean:
+   - TRIP_MILES = 8.3 miles
+   - TRIP_SECONDS = 1320 seconds
+   - TRIP_MINUTES = 22 minutes
+      → order of magnitude of TRIP_MILES and TRIP_MINUTES is closer.
 
+## Scatter Plot
+
+To see how well the training of the model is with both features.
+
+Scatter plot of the features vs the label is a 3D plot → TRIP_MILES, TRIP_MINUTES (x, y) vs FARE (z-axis).
+
+## Further Research
+
+Chicago Taxi fares are calculated, in the atuality, w/ this formula:
+FARE = 2.25 * TRIP_MILES + 0.12 * TRIP_MINUTES + 3.25
+
+Let's see if our model sensed the same:
+Model's output → the weights and bias
+⇒ 
+
+## Next Steps
+
+Run model on TRIP_SECONDS instead of TRIP_MINUTES
+Split Data into Training and Test Sets
