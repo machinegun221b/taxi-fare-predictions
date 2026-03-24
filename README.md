@@ -28,8 +28,8 @@ Experimenting with different features to build a Linear Regression model and tun
 6. **Prediction & Evaluation**
    - Generate predictions on sample data
    - Measure error using L1 loss and RMSE
-
 <br>
+
 1. Loading the Dataset to pandas DataFrame
 2. Exploring the dataset
     1. Generate Correlation matrix
