@@ -116,7 +116,8 @@ Scatter plot of the features vs the label is a 3D plot → TRIP_MILES, TRIP_MINU
 
 ## Making Predictions
 
-Model seems to do fairly well in predicting fare for a taxi ride in Chicago, Illinois in May of 2022.   <br>
+Model seems to do fairly well in predicting fare for a taxi ride in Chicago, Illinois in May of 2022.
+
 Most of the predicted values do not vary significantly from the observed value judging by the L1_LOSS data.
 
 
@@ -127,10 +128,10 @@ Most of the predicted values do not vary significantly from the observed value j
 
 ## Further Research
 
-Chicago Taxi fares are calculated, in the atuality, w/ this formula:
+Chicago Taxi fares are calculated, in the atuality, w/ this formula:   <br>
 FARE = 2.25 * TRIP_MILES + 0.12 * TRIP_MINUTES + 3.25
 
-Let's see if our model sensed the same:
+Let's see if our model sensed the same:   <br>
 Model's output → the weights and bias
 ⇒ 
 
