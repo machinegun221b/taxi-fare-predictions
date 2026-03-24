@@ -136,5 +136,5 @@ Model's output → the weights and bias
 
 ## Next Steps
 
-[] Run model on TRIP_SECONDS instead of TRIP_MINUTES
+[] Run model on TRIP_SECONDS instead of TRIP_MINUTES   <br>
 [] Split Data into Training and Test Sets
