@@ -64,9 +64,9 @@ several python libraries for - data manipulation, ML tasks and data visualisatio
 
 ## DataSet
 
-The dataset - https://www.google.com/url?q=https%3A%2F%2Fstorage.mtls.cloud.google.com%2Fmlcc-nextgen-internal%2Fchicago_taxi_train.csv 
+The [dataset](https://www.google.com/url?q=https%3A%2F%2Fstorage.mtls.cloud.google.com%2Fmlcc-nextgen-internal%2Fchicago_taxi_train.csv)
 
-- subset of Taxi Trips https://data.cityofchicago.org/Transportation/Taxi-Trips-2013-2023-/wrvz-psew/about_data
+- subset of [Taxi Trips](https://data.cityofchicago.org/Transportation/Taxi-Trips-2013-2023-/wrvz-psew/about_data)
 - 2 day period from May 2022.
 
 ### DataSet Exploration
