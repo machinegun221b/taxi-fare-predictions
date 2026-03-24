@@ -28,17 +28,6 @@ Experimenting with different features to build a Linear Regression model and tun
 6. **Prediction & Evaluation**
    - Generate predictions on sample data
    - Measure error using L1 loss and RMSE
-<br>
-
-1. Loading the Dataset to pandas DataFrame
-2. Exploring the dataset
-    1. Generate Correlation matrix
-    2. Visualise relationships in DS
-3. Train Model
-    1. w/ 1 feature
-    2. w/ 2 features
-4. Compare Experiments
-5. Model Validation
 
 ## Tech Stack
 
@@ -54,13 +43,6 @@ Experimenting with different features to build a Linear Regression model and tun
 #### Data Visualization
 - Plotly — interactive visualizations (pair plots, scatter matrices)
 - Matplotlib — training metrics and loss curves
-
-#### Evaluation
-- RMSE (Root Mean Squared Error) — model performance metric
-- Loss curves — training convergence analysis
-
-compare training run using RMSE and loss curves
-several python libraries for - data manipulation, ML tasks and data visualisation.
 
 ## DataSet
 
@@ -88,13 +70,18 @@ Hence, the strongest feature correlation to label.
 
 Grid of pairwise plots - to visualise the relationship of each feature with all the other features.
 
-## Training the Model
+## Model Training
 
-Model Topography: Simple Linear Regression Model 
-i.e., single node in a single layer.
+A simple **linear regression model** is implemented using Keras.
 
-w/ keras
-minimising MSE
+#### Model Architecture
+- Single dense layer
+- One output unit
+- Represents a linear mapping from input features to fare
+
+#### Training Objective
+- Loss Function: Mean Squared Error (MSE)
+- Optimization Goal: Minimize prediction error between actual and predicted fares
 
 ### w/ 1 feature
 
@@ -102,17 +89,6 @@ TRIP_MILES - since strongest correlation with FARE (label) - for first training 
 - took 5 epochs to converge on final model
 - model fit data fairly well
 - Root Mean Square Error (RMSE) = $3.8228
-
-### Experimenting with Hyperparameters
-
-To find the best set of hyperparameters to train our model.
-
-1. LR = 1                          BS = 50
-    - impact on model training - 
-2. LR = 0.0001                BS = 50
-    - impact on model training -
-3. LR = 0.001                  BS = 500
-    - impact on training results -
   
 ### w/ 2 features
 
@@ -140,10 +116,9 @@ Scatter plot of the features vs the label is a 3D plot → TRIP_MILES, TRIP_MINU
 
 ## Making Predictions
 
-Model accuracy in predicting fare for a taxi ride in Chicago, Illinois in 2022 -
-model seems to do fairly well.
-Most of the predicted values do not vary significantly from the observed value. 
-by the L1_LOSS data.
+Model seems to do fairly well in predicting fare for a taxi ride in Chicago, Illinois in May of 2022.   <br>
+Most of the predicted values do not vary significantly from the observed value judging by the L1_LOSS data.
+
 
 
 #
@@ -161,5 +136,5 @@ Model's output → the weights and bias
 
 ## Next Steps
 
-Run model on TRIP_SECONDS instead of TRIP_MINUTES
-Split Data into Training and Test Sets
+[] Run model on TRIP_SECONDS instead of TRIP_MINUTES
+[] Split Data into Training and Test Sets
