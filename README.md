@@ -123,13 +123,13 @@ TRIP_MINUTES
 
 - we see the model with 2 features performs a bit better than that of one feature alone. After hyperparameter tuning we see that the RMSE values are, for:
     - 1 feature model = 3.6411
-    - 2 features model = 3.4978
-      → which puts the second model predictions $0.143 closer to the actual observed values on          average.
+    - 2 features model = 3.4978   <br>
+      → which puts the second model predictions $0.143 closer to the actual observed values on             average.
     - we observe the same in the plots as well.
 - we use TRIP_MINUTES > TRIP_SECONDS since the mean:
    - TRIP_MILES = 8.3 miles
    - TRIP_SECONDS = 1320 seconds
-   - TRIP_MINUTES = 22 minutes
+   - TRIP_MINUTES = 22 minutes   <br>
       → order of magnitude of TRIP_MILES and TRIP_MINUTES is closer.
 
 ## Scatter Plot
